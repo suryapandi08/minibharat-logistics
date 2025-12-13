@@ -4,10 +4,15 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import image from "@/assets/services/Start-Logistics.jpg";
-import blog1 from "@/assets/blog/blog1.png";
-import blog2 from "@/assets/blog/blog2.png";
-import blog3 from "@/assets/blog/blog3.png";
+import image from "@/assets/blog-img/Untitled design (13).png";
+import blog1 from "@/assets/blog-img/1.png";
+import blog2 from "@/assets/blog-img/2.png";
+import blog3 from "@/assets/blog-img/3.png";
+import blog4 from "@/assets/blog-img/4.png";
+import blog5 from "@/assets/blog-img/5.png";
+import blog6 from "@/assets/blog-img/6.png";
+
+
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -70,7 +75,7 @@ const Blog = () => {
     {
       id: 4,
       title: "Low Investment, High Earning Potential: Logistics is a business with daily revenue, not seasonal income.",
-      image: blog3,
+      image: blog4,
       author: "By Admin",
       date: "Dec 13, 2025",
       category: "Company Updates",
@@ -81,7 +86,7 @@ const Blog = () => {
     {
       id: 5,
       title: "Mini Bharat Is Expanding Across India — Huge Territory Opportunities",
-      image: blog3,
+      image: blog5,
       author: "By Admin",
       date: "Dec 13, 2025",
       category: "Company Updates",
@@ -92,7 +97,7 @@ const Blog = () => {
     {
       id: 6,
       title: " A Franchise That Makes a Real Difference",
-      image: blog3,
+      image: blog6,
       author: "By Admin",
       date: "Dec 13, 2025",
       category: "Company Updates",
