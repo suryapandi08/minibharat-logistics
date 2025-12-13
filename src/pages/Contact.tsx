@@ -472,6 +472,7 @@
 
 
 
+
 import React, { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -493,6 +494,7 @@ import { useToast } from "@/hooks/use-toast";
 // ---------------------------
 // Locations Component
 // ---------------------------
+
 interface LocationItem {
   name: string;
   img: string;
