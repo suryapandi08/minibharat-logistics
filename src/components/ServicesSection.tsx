@@ -92,21 +92,21 @@ const services = [
     title: "ODH Warehouse Business Model",
     image: odhWarehouseImg,
     description: "Operate an ODH warehouse and manage outbound dispatch and line-haul coordination.",
-    link: "/odh-warehouse-business-model"
+    link: "/odh-business-model"
   },
   {
     id: "mdh-warehouse",
     title: "MDH Warehouse Business Model",
     image: mdhWarehouseImg,
     description: "Run an MDH warehouse handling inbound shipments, sorting, storage, and final distribution.",
-    link: "/mdh-warehouse-business-model"
+    link: "/mdh-business-model"
   },
   {
     id: "grocery-warehouse",
     title: "Grocery Warehouse Business Model",
     image: groceryWarehouseImg,
     description: "Grocery storage and dispatch model supporting fast-moving daily essentials and hyperlocal orders.",
-    link: "/grocery-warehouse-business-model"
+    link: "/grocery-business-model"
   },
   {
     id: "large-shipment",
@@ -134,7 +134,7 @@ const services = [
     title: "Mints Delivery Business Model",
     image: minutesDeliveryImg,
     description: "A rapid delivery model ensuring high-speed shipments in minutes for hyperlocal zones.",
-    link: "/minutes-delivery-business-model"
+    link: "/mints-delivery-business-model"
   },
   {
     id: "low-value",

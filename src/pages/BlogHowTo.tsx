@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { CalendarDays, User, CheckCircle, MapPin } from "lucide-react";
 import image  from "@/assets/services/Start-Logistics.jpg"
+import newimage from "@/assets/blog-img/Untitled design (13).png"
 
 const BlogHowTo: React.FC = () => {
   useEffect(() => {
@@ -34,9 +35,9 @@ const BlogHowTo: React.FC = () => {
       >
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">How to Start a Logistics Franchise</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">The Logistics Market in India Is Booming</h1>
           <p className="max-w-2xl mx-auto text-gray-200">
-            A practical, step-by-step guide for entrepreneurs to build a successful delivery or courier franchise.
+           India’s logistics industry is projected to reach $380 billion by 2028 — driven by online shopping, manufacturing growth, and last-mile innovation.
           </p>
           <div className="mt-4 flex items-center justify-center gap-4 text-sm text-gray-300">
             <span className="flex items-center gap-2"><User size={16}/> By Mini Bharat</span>
@@ -52,7 +53,7 @@ const BlogHowTo: React.FC = () => {
           <article className="lg:col-span-2 space-y-6">
             <div className="bg-white rounded-2xl shadow-md overflow-hidden">
               <img
-                src={image}
+                src={newimage}
                 alt="Start a Logistics Franchise"
                 className="w-full h-full object-cover"
               />

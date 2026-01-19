@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import image from "@/assets/blog-img/3.png";
 
 const Blog3: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const Blog3: React.FC = () => {
             Blog: Unlocking Prosperity
           </h1>
           <p className="text-gray-200">
-            Mini Bharat's Journey through Delivery Point Investment and Profit
+            Technology Gives Mini Bharat Franchisees a Competitive Edge
 
           </p>
         </div>
@@ -35,7 +36,7 @@ const Blog3: React.FC = () => {
           {/* Blog Content */}
           <div className="lg:col-span-2 bg-white rounded-2xl shadow-md p-6">
             <img
-              src="https://minibharatlogistics.com/assets/front/img/blog/17032433892024505022.png"
+              src={image}
               alt="Blog"
               className="w-full rounded-lg mb-6"
             />

@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import groceryDeliveryImage from "@/assets/grocery-delivery.jpg";
+import image from "@/assets/service/6.png"
 import { 
   Package,
   DollarSign,
@@ -143,7 +144,7 @@ const GroceryBusinessModel = () => {
             <div className="relative">
               <div className="absolute -inset-8 bg-gradient-to-br from-green-400/30 to-emerald-400/30 rounded-[3rem] blur-3xl" />
               <div className="relative rounded-[3rem] overflow-hidden shadow-2xl">
-                <img src={groceryDeliveryImage} alt="Fresh grocery delivery" className="w-full h-auto" />
+                <img src={image} alt="Fresh grocery delivery" className="w-full h-auto" />
                 
                 {/* Floating Stats */}
                 <div className="absolute top-8 left-8 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl">

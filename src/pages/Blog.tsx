@@ -14,6 +14,8 @@ import blog6 from "@/assets/blog-img/6.png";
 
 
 
+
+
 const Blog = () => {
   const navigate = useNavigate();
 
@@ -80,7 +82,7 @@ const Blog = () => {
       date: "Dec 13, 2025",
       category: "Company Updates",
       readTime: "7 min read",
-      link: "/blog3"
+      link: "/blog4"
     }
     ,
     {
@@ -91,7 +93,7 @@ const Blog = () => {
       date: "Dec 13, 2025",
       category: "Company Updates",
       readTime: "7 min read",
-      link: "/blog3"
+      link: "/blog5"
     }
     ,
     {
@@ -102,7 +104,7 @@ const Blog = () => {
       date: "Dec 13, 2025",
       category: "Company Updates",
       readTime: "7 min read",
-      link: "/blog3"
+      link: "/blog6"
     }
   
   ];
