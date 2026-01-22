@@ -25,6 +25,7 @@ import award6 from "@/assets/award-team/6.png";
 import award7 from "@/assets/award-team/7.png";
 import award8 from "@/assets/award-team/8.png";
 import fun from "@/assets/gallery/Trips/fun.png";
+import milestone from "@/assets/milestone/milestone.jpeg";
 
 // Core + modules
 import SwiperCore from "swiper";
@@ -596,108 +597,30 @@ const AboutUs = () => {
       </section>
 
       {/* Milestones Timeline Section */}
-      <section className="py-12 md:py-12 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">Minibharat Milestones</h2>
-            <p className="text-base md:text-xl text-muted-foreground">A timeline of our growth and key achievements</p>
-          </div>
-          
-          {/* Mobile Timeline - Vertical */}
-          <div className="md:hidden relative max-w-md mx-auto">
-            {/* Vertical Timeline Line */}
-            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-primary/20 via-orange-primary to-orange-primary/20"></div>
-            
-            {/* Timeline Items */}
-            <div className="space-y-8">
-              {milestones.map((milestone, index) => (
-                <div key={index} className="relative flex gap-4 group">
-                  {/* Timeline Dot */}
-                  <button 
-                    onClick={() => setSelectedMilestone(selectedMilestone === index ? null : index)} 
-                    className="relative z-10 flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-primary to-orange-600 rounded-full border-4 border-background shadow-lg group-hover:scale-110 transition-all duration-300 flex items-center justify-center cursor-pointer focus:outline-none focus:ring-4 focus:ring-orange-primary/20"
-                  >
-                    <span className="text-xs font-bold text-white">{milestone.year.slice(-2)}</span>
-                  </button>
-                  
-                  {/* Content */}
-                  <div className="flex-1 pt-1">
-                    <Badge 
-                      variant="secondary" 
-                      className={`mb-2 transition-all duration-300 cursor-pointer text-xs ${selectedMilestone === index ? 'bg-orange-primary text-white' : 'bg-orange-primary/10 text-orange-primary'}`}
-                      onClick={() => setSelectedMilestone(selectedMilestone === index ? null : index)}
-                    >
-                      {milestone.year}
-                    </Badge>
-                    <h3 className="font-bold text-foreground mb-1 text-base leading-tight">{milestone.event}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{milestone.description}</p>
-                    
-                    {/* Expandable Details on Mobile */}
-                    {selectedMilestone === index && (
-                      <div className="mt-3 space-y-2 animate-fade-in">
-                        {milestone.details.map((detail, idx) => (
-                          <div key={idx} className="bg-gradient-to-r from-orange-primary to-orange-600 text-white p-3 rounded-xl shadow-md text-xs">
-                            {detail}
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+     <section className="py-12 md:py-12 bg-background">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {/* Heading – KEEP SAME */}
+    <div className="text-center mb-10 md:mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
+        Minibharat Milestones
+      </h2>
+      <p className="text-base md:text-xl text-muted-foreground">
+        A timeline of our growth and key achievements
+      </p>
+    </div>
 
-          {/* Desktop Timeline - Horizontal */}
-          <div className="hidden md:block relative max-w-6xl mx-auto">
-            {/* Horizontal Timeline Line */}
-            <div className="absolute top-16 left-8 right-8 h-1 bg-gradient-to-r from-orange-primary/20 via-orange-primary to-orange-primary/20 rounded-full"></div>
-            
-            {/* Timeline Items */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8">
-              {milestones.map((milestone, index) => (
-                <div key={index} className="relative flex flex-col items-center text-center group">
-                  {/* Timeline Dot */}
-                  <button 
-                    onClick={() => setSelectedMilestone(selectedMilestone === index ? null : index)} 
-                    className="relative z-10 w-12 h-12 bg-gradient-to-br from-orange-primary to-orange-600 rounded-full border-4 border-white shadow-lg mb-4 group-hover:scale-110 transition-all duration-300 flex items-center justify-center cursor-pointer focus:outline-none focus:ring-4 focus:ring-orange-primary/20"
-                  >
-                    <span className="text-xs font-bold text-white">{milestone.year.slice(-2)}</span>
-                  </button>
-                  
-                  {/* Content */}
-                  <Badge 
-                    variant="secondary" 
-                    className={`mb-3 transition-all duration-300 cursor-pointer text-xs ${selectedMilestone === index ? 'bg-orange-primary text-white' : 'bg-orange-primary/10 text-orange-primary hover:bg-orange-primary hover:text-white'}`}
-                    onClick={() => setSelectedMilestone(selectedMilestone === index ? null : index)}
-                  >
-                    {milestone.year}
-                  </Badge>
-                  <h3 className="font-bold text-foreground mb-2 text-xs md:text-sm leading-tight px-2">{milestone.event}</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed px-2">{milestone.description}</p>
-                </div>
-              ))}
-            </div>
-            
-            {/* Expandable Detail Bars */}
-            {selectedMilestone !== null && <div className="mt-12 space-y-3 animate-fade-in">
-                {milestones[selectedMilestone].details.map((detail, index) => <div key={index} className="bg-gradient-to-r from-orange-primary to-orange-600 text-white p-4 rounded-2xl shadow-lg animate-scale-in" style={{
-              animationDelay: `${index * 100}ms`
-            }}>
-                    <div className="flex items-center justify-between">
-                      <span className="font-medium">{detail}</span>
-                      <div className="text-xs opacity-75">
-                        {index === 0 ? 'Sep' : 'Oct'}
-                      </div>
-                    </div>
-                  </div>)}
-              </div>}
-            
-            {/* Mobile Timeline Line */}
-            <div className="md:hidden absolute left-6 top-8 bottom-8 w-1 bg-gradient-to-b from-orange-primary/20 via-orange-primary to-orange-primary/20 rounded-full"></div>
-          </div>
-        </div>    
-      </section>
+    {/* Image Section */}
+    <div className="flex justify-center">
+      <img
+        src={milestone}
+        alt="Minibharat Milestones"
+        className="w-full max-w-4xl rounded-2xl shadow-xl object-cover"
+      />
+    </div>
+
+  </div>
+</section>
 
       {/* Pan-India Network Map Section */}
         {/* Pan-India Network Map Section */}
